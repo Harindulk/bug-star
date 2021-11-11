@@ -4,5 +4,4 @@ GitHub Game Off 2021 | Game Jam
 
 ## credits
 animations - https://www.mixamo.com/  
-Pistol - https://poly.pizza/m/ap9I6sv347V  
-Bullet - https://poly.pizza/m/2_eJPKc_a_D  
+
