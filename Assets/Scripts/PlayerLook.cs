@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class PlayerLook : MonoBehaviour
 {
-    [SerializeField] private float sensX;
-    [SerializeField] private float sensY;
+    [SerializeField] private float sensX = 100f;
+    [SerializeField] private float sensY = 100f;
 
     [SerializeField] Transform cam;
     [SerializeField] Transform orientation;
@@ -24,18 +24,15 @@ public class PlayerLook : MonoBehaviour
 
     private void Update()
     {
-        MyInput();
-        cam.transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
-        orientation.transform.rotation = Quaternion.Euler(0, yRotation, 0);
-    }
-
-    void MyInput()
-    {
         mouseX = Input.GetAxisRaw("Mouse X");
         mouseY = Input.GetAxisRaw("Mouse Y");
 
         yRotation += mouseX * sensX * multiplier;
         xRotation -= mouseY * sensY * multiplier;
+
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+
+        cam.transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
+        orientation.transform.rotation = Quaternion.Euler(0, yRotation, 0);
     }
 }
