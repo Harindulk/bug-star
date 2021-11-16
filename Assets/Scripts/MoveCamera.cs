@@ -2,10 +2,11 @@ using UnityEngine;
 
 public class MoveCamera : MonoBehaviour
 {
-    [SerializeField] Transform cameraPosition;
+
+    public Transform player;
 
     void Update()
     {
-        transform.position = cameraPosition.position;
+        transform.position = player.transform.position;
     }
 }
