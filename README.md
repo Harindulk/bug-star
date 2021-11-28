@@ -4,6 +4,8 @@ GitHub Game Off 2021 | Game Jam
 
 ## credits
 
+game logo created by - https://github.com/ThiccRose
+
 ### Tools
 >##### probuilder - https://github.com/Unity-Technologies/com.unity.probuilder  
 >##### progrids - https://docs.unity3d.com/Packages/com.unity.progrids@3.0/manual/index.html
