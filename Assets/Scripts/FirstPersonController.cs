@@ -13,6 +13,7 @@ public class FirstPersonController : MonoBehaviour
     [SerializeField] private bool canJump = true;
     [SerializeField] private bool canCrouch = true;
     [SerializeField] private bool canUseHeadbob = true;
+    [SerializeField] private bool useFootsteps = true;
 
     [Header("Controls")]
     [SerializeField] private KeyCode sprintKey = KeyCode.LeftShift;
@@ -53,6 +54,18 @@ public class FirstPersonController : MonoBehaviour
     private float defaultYPos = 0;
     private float timer;
 
+    [Header("Footstep Parameters")]
+    [SerializeField] private float baseStepSpeed = 0.5f;
+    [SerializeField] private float crouchStepMultipler = 1.5f;
+    [SerializeField] private float sprintStepMultipler = 0.6f;
+    [SerializeField] private AudioSource footStepAudioSource = default;
+    [SerializeField] private AudioClip[] normalClip = default;
+    [SerializeField] private AudioClip[] metalClip = default;
+    [SerializeField] private AudioClip[] woodClip = default;
+    private float footstepTimer = 0;
+    private float GetCurrentOffset => isCrouching ? baseStepSpeed * crouchStepMultipler : isSprinting ? baseStepSpeed * sprintStepMultipler : baseStepSpeed;
+
+
     private Camera playerCamera;
     private CharacterController characterController;
 
@@ -90,6 +103,11 @@ public class FirstPersonController : MonoBehaviour
             if (canUseHeadbob)
             {
                 HandleHeadBob();
+            }
+
+            if (useFootsteps)
+            {
+                HandleFootSteps();
             }
 
             ApplyFinalMovements();
@@ -151,6 +169,38 @@ public class FirstPersonController : MonoBehaviour
         }
 
         characterController.Move(moveDirection * Time.deltaTime);
+    }
+
+    private void HandleFootSteps()
+    {
+        if (!characterController.isGrounded) return;
+        if (currentInput == Vector2.zero) return;
+
+        footstepTimer -= Time.deltaTime;
+
+        if (footstepTimer <= 0)
+        {
+            if (Physics.Raycast(playerCamera.transform.position, Vector3.down, out RaycastHit hit, 3))
+            {
+                switch (hit.collider.tag)
+                {
+                    case "FootSteps/Normal":
+                        footStepAudioSource.PlayOneShot(normalClip[Random.Range(0, normalClip.Length - 1)]);
+                        break;
+                    case "FootSteps/metal":
+                        footStepAudioSource.PlayOneShot(metalClip[Random.Range(0, metalClip.Length - 1)]);
+                        break;
+                    case "FootSteps/wood":
+                        footStepAudioSource.PlayOneShot(woodClip[Random.Range(0, woodClip.Length - 1)]);
+                        break;
+                    default:
+                        footStepAudioSource.PlayOneShot(normalClip[Random.Range(0, normalClip.Length - 1)]);
+                        break;
+                }
+            }
+
+            footstepTimer = GetCurrentOffset;
+        }
     }
 
     private IEnumerator CrouchStand()
