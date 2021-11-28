@@ -15,4 +15,4 @@ GitHub Game Off 2021 | Game Jam
 >##### Light Chandelier by Quaternius [CC0] (https://creativecommons.org/publicdomain/zero/1.0/) via Poly Pizza (https://poly.pizza/m/q3k8I8YYX9)
 
 ### music
->#### Odyssey by John Tasoulas | https://soundcloud.com/john-tasoulas | Music promoted by https://www.free-stock-music.com Creative Commons Attribution 3.0 Unported License | https://creativecommons.org/licenses/by/3.0/deed.en_US
+>>##### Odyssey by John Tasoulas | https://soundcloud.com/john-tasoulas | Music promoted by https://www.free-stock-music.com Creative Commons Attribution 3.0 Unported License | https://creativecommons.org/licenses/by/3.0/deed.en_US
