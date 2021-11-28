@@ -14,5 +14,5 @@ GitHub Game Off 2021 | Game Jam
 >##### Light Switch by Jarlan Perez [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza (https://poly.pizza/m/1xBl-8de6b0)
 >##### Light Chandelier by Quaternius [CC0] (https://creativecommons.org/publicdomain/zero/1.0/) via Poly Pizza (https://poly.pizza/m/q3k8I8YYX9)
 
-### music
+### Music
 >##### Odyssey by John Tasoulas | https://soundcloud.com/john-tasoulas | Music promoted by https://www.free-stock-music.com Creative Commons Attribution 3.0 Unported License | https://creativecommons.org/licenses/by/3.0/deed.en_US
