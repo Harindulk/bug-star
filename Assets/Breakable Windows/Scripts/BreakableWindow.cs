@@ -150,7 +150,7 @@ public class BreakableWindow : MonoBehaviour {
         mf.mesh = m;
         
         MeshCollider col = obj.AddComponent<MeshCollider>();
-        col.inflateMesh = true;
+        col.inflateMesh = true; 
         col.convex = true;
         if (destroyPhysicsTime > 0 && destroyColliderWithPhysics) Destroy(col, destroyPhysicsTime);
         
