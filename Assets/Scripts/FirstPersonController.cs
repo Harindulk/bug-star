@@ -23,6 +23,8 @@ public class FirstPersonController : MonoBehaviour
 
     [Header("Movement Parameters")]
     [SerializeField] private float walkSpeed = 3.0f;
+    [SerializeField] private float currentWalkSpeed;
+
     [SerializeField] private float sprintSpeed = 6.0f;
     [SerializeField] private float crouchSpeed = 1.5f;
 
@@ -34,6 +36,8 @@ public class FirstPersonController : MonoBehaviour
 
     [Header("Jumping Parameters")]
     [SerializeField] private float jumpForce = 8.0f;
+    [SerializeField] private float currentJumpForce;
+
     [SerializeField] private float gravity = 30.0f;
 
     [Header("Crouch Parameters")]
@@ -74,6 +78,12 @@ public class FirstPersonController : MonoBehaviour
     private Vector2 currentInput;
 
     private float rotationX = 0;
+
+    void Start()
+    {
+        currentWalkSpeed = walkSpeed;
+        currentJumpForce = jumpForce;
+    }
 
     void Awake()
     {
@@ -124,6 +134,7 @@ public class FirstPersonController : MonoBehaviour
                 Cursor.visible = false;
                 mouselook = true;
             }
+
 
             ApplyFinalMovements();
         }
@@ -251,5 +262,33 @@ public class FirstPersonController : MonoBehaviour
         isCrouching = !isCrouching;
 
         duringCrouchAnimation = false;
+    }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        switch (hit.gameObject.tag)
+        {
+            case "SpeedBoost":
+                walkSpeed = 15f;
+                break;
+
+            case "JumpPad":
+                jumpForce = 28;
+                break;
+
+            case "HighJump":
+                jumpForce = 17;
+                break;
+
+            case "Ground":
+                walkSpeed = currentWalkSpeed;
+                jumpForce = currentJumpForce;
+                break;
+
+            case "FootSteps/metal":
+                walkSpeed = currentWalkSpeed;
+                jumpForce = currentJumpForce;
+                break;
+        }
     }
 }

@@ -38,12 +38,11 @@ public class PauseMenu : MonoBehaviour
 
     public void Restart()
     {
-        Debug.Log("restart"); 
+        Debug.Log("restart");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1f;
     }
-    public void Settings()
-    {
-        Debug.Log("settings");
-    }
+
     public void Leave()
     {
         Time.timeScale = 1f;

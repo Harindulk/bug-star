@@ -7,6 +7,9 @@ TagManager:
   - FootSteps/Normal
   - FootSteps/metal
   - FootSteps/wood
+  - JumpPad
+  - Ground
+  - HighJump
   layers:
   - Default
   - TransparentFX
