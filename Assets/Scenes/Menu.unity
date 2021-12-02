@@ -8342,7 +8342,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: More Levels Coming to On Android Version
+  m_text: More Levels Coming to Android Version
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 699a49bb695ba0445a917dbbde3c1c57, type: 2}
   m_sharedMaterial: {fileID: -5176085114748089377, guid: 699a49bb695ba0445a917dbbde3c1c57, type: 2}
