@@ -1,6 +1,7 @@
 ## Bug star
 GitHub Game Off 2021 | Game Jam
-![creepy-crawly-frame-removed](https://user-images.githubusercontent.com/61319844/140776802-3dcca159-8bed-437e-838b-c3a37b34fb89.gif)
+![](https://img.itch.zone/aW1nLzc1NzMwNzgucG5n/original/u4rBbo.png)
+
 
 #### Hey there! Bug Star is a game created by myself (Harindu) for the 2021 GitHub Game Off Game Jam! 
 
@@ -14,4 +15,6 @@ GitHub Game Off 2021 | Game Jam
 
 ### Music
 >##### Odyssey by John Tasoulas | https://soundcloud.com/john-tasoulas | Music promoted by https://www.free-stock-music.com Creative Commons Attribution 3.0 Unported License | https://creativecommons.org/licenses/by/3.0/deed.en_US
+![](https://img.itch.zone/aW1hZ2UvMTMwMTMyNi83NTY5MzU0LnBuZw==/original/uhizTo.png)
 
+![](https://img.itch.zone/aW1hZ2UvMTMwMTMyNi83NTY5MzU3LnBuZw==/original/jHkL7L.png)
