@@ -5,11 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    public void SelectToPlay()
-    {
-
-    }
-
     public void ExitGame()
     {
         Debug.Log("Exit");
