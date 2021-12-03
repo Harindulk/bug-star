@@ -1,6 +1,7 @@
 ## Bug star
 GitHub Game Off 2021 | Game Jam
 Download the game - https://harindulk.itch.io/bug-star
+
 ![](https://img.itch.zone/aW1nLzc1NzMwNzgucG5n/original/u4rBbo.png)
 
 
