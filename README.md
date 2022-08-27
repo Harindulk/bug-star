@@ -15,8 +15,6 @@ Download the game - https://harindulk.itch.io/bug-star
 
 #### "Bug Star" is a game based on bugs, which means you need to find the bugs that I intentionally added to the game & you need to use them to complete the levels. 
 
-#### I am a 15-years-old self-taught student developer, and I plan to release another version of the game very soon, as I built this game while I was busy with my school work too.
-
 ## credits
 
 >##### game logo created by - https://github.com/ThiccRose
