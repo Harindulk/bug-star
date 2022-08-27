@@ -11,8 +11,6 @@ Download the game - https://harindulk.itch.io/bug-star
 ![](https://img.itch.zone/aW1nLzc1NzMwNzgucG5n/original/u4rBbo.png)
 
 
-#### Hey there! Bug Star is a game created by myself (Harindu) for the 2021 GitHub Game Off Game Jam! 
-
 #### "Bug Star" is a game based on bugs, which means you need to find the bugs that I intentionally added to the game & you need to use them to complete the levels. 
 
 ## credits
