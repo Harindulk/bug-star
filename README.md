@@ -21,4 +21,4 @@ Download the game - https://harindulk.itch.io/bug-star
 >##### Odyssey by John Tasoulas | https://soundcloud.com/john-tasoulas | Music promoted by https://www.free-stock-music.com Creative Commons Attribution 3.0 Unported License | https://creativecommons.org/licenses/by/3.0/deed.en_US
 ![](https://img.itch.zone/aW1hZ2UvMTMwMTMyNi83NTY5MzU0LnBuZw==/original/uhizTo.png)
 
-![](https://img.itch.zone/aW1hZ2UvMTMwMTMyNi83NTY5MzU3LnBuZw==/original/jHkL7L.png)
+![](https://img.itch.zone/aW1hZ2UvMTMwMTMyNi83NTY5MzU3LnBuZw==/original/jHkL7L.png) 
